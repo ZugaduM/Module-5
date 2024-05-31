@@ -3,7 +3,10 @@ class Building:
   def __init__(self):
     Building.total += 1
 
-
-for i in range(1, 41):
+i = 0
+while i != 40:
   my_class = Building()
-  print(f'Total class instances: {my_class.total}')
+  i += 1
+  
+
+print(f'Total class instances: {Building.total}')
